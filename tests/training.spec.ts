@@ -4,10 +4,9 @@ import { test } from '@playwright/test'
 
 test('login jci', async ({ page }) => {
 
-await page.goto('https://jcibe--eodbprjcts.sandbox.my.site.com/Solution/login')
-await page.getByRole('button', {name: 'Log in with User credentials'}).click()
-await page.getByRole('textbox', {name: 'Email Address'}).fill('cam.newton.eodbprjcts@jci.com.hn')
-await page.getByRole('textbox', {name: 'Password'}).fill('!Ua1Hd7!a%6I*BR#')
-await page.getByRole('button',{name: 'Sign In'}).click()
+await page.goto('https://www.saucedemo.com/')
+await page.getByRole('textbox', {name: 'Username'}).fill('standard_user')
+await page.getByRole('textbox', {name: 'Password'}).fill('secret_sauce')
+await page.getByRole('button',{name: 'Login'}).click()
 
 })
